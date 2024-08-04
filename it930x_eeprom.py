@@ -438,8 +438,8 @@ class MyApp(wx.App):
         self.spinCtrlBackupPid.SetBase(16)
         self.spinCtrlRestorePid.SetBase(16)
         self.spinCtrlRestoreVid.SetBase(16)
-        self.spinCtrlRestorePid.SetValue(0x048d)
-        self.spinCtrlRestoreVid.SetValue(0x9306)
+        self.spinCtrlRestoreVid.SetValue(0x048d)
+        self.spinCtrlRestorePid.SetValue(0x9306)
 
         self.textCtrlRestoreDeviceEeprom.SetFont(self.text_font)
         self.textCtrlRestoreFileEeprom.SetFont(self.text_font)
