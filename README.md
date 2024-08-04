@@ -1,12 +1,31 @@
 # it930x_eeprom_py
 
-[PLEX](http://www.plex-net.co.jp/)や[e-Better](https://www.e-better.jp/)から販売されたUSB BridgeにITE IT930xを採用しているPC用デジタルチューナーに対して、以下を行うプログラムです。
+[e-Better](https://www.e-better.jp/)から販売されたDTV02-1T1S-Uに対して以下を行うプログラムです。
 
-* デバイスを以下のVID:PIDで正常に認識している状態でEEPROMのバックアップ
+* デバイスをVID:PID=0x0511:0x004bで認識している状態でEEPROMのバックアップ
 * デバイスをVID:PID=0x048d:0x9306で認識している状態でEEPROMのリストア
 
-なお、EEPROMのリストアには**EEPROMの中身が壊れる前、デバイスを正常に認識している状態でバックアップしたファイル**が必要です。
+ただし、EEPROMのリストアには**EEPROMの中身が壊れる前、デバイスをVID:PID=0x0511:0x004bで正常に認識している状態でバックアップしたファイル**が必要です。
 
+動作確認環境を以下に示します。
+
+* バックアップ、リストアの両方
+  * DTV02-1T1S-U
+* バックアップのみ
+  * PX-W3U4
+* Windows 11
+  * [python](https://www.python.org/) 3.11.9
+  * [wxPython](https://wxpython.org/index.html) 4.2.1
+  * [libusb1](https://github.com/vpelletier/python-libusb1) 3.1.0
+  * [Zadig](https://zadig.akeo.ie/) 2.8
+* Ubuntu 22.04
+  * python 3.10.12
+  * wxPython 4.0.7
+  * libusb1 3.1.0
+
+USB BridgeにITE IT930xを採用しているチューナーであれば動作すると思われますが自己責任でお願いします。
+
+<!--
 | チューナー            |  VID   |  PID   |
 | :------------------- | :----: | :----: |
 | PX-W3U4              | 0x0511 | 0x083f |
@@ -24,19 +43,7 @@
 | DTV02(A)-1T1S-U 2309 | 0x0511 | 0x084b |
 | DTV02A-4TS-P         | 0x0511 | 0x0254 |
 | DTV02-5T-P           | 0x0511 | 0x024d |
-
-## 動作確認環境
-
-* DTV02-1T1S-U
-* Windows 11
-  * [python](https://www.python.org/) 3.11.9
-  * [wxPython](https://wxpython.org/index.html) 4.2.1
-  * [libusb1](https://github.com/vpelletier/python-libusb1) 3.1.0
-  * [Zadig](https://zadig.akeo.ie/) 2.8
-* Ubuntu 22.04
-  * python 3.10.12
-  * wxPython 4.0.7
-  * libusb1 3.1.0
+-->
 
 ## インストール
 
