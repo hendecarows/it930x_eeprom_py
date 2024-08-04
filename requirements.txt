@@ -1,0 +1,2 @@
+libusb1==3.1.0
+wxPython==4.2.1

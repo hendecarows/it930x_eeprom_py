@@ -1,0 +1,45 @@
+# PX-W3U4
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="083f", MODE="0664", GROUP="video"
+# PX-W3PE4
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="023f", MODE="0664", GROUP="video"
+# PX-W3PE4
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="073f", MODE="0664", GROUP="video"
+# PX-Q3U4
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="084a", MODE="0664", GROUP="video"
+# PX-Q3PE4
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="024a", MODE="0664", GROUP="video"
+# PX-Q3PE5
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="074a", MODE="0664", GROUP="video"
+# PX-MLT5PE
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="024e", MODE="0664", GROUP="video"
+# PX-MLT5U
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="084e", MODE="0664", GROUP="video"
+# PX-MLT8PE3
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0252", MODE="0664", GROUP="video"
+# PX-MLT8PE5
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0253", MODE="0664", GROUP="video"
+# DTV02-1T1S-U
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="004b", MODE="0664", GROUP="video"
+# DTV02-1T1S-U 2309
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="084b", MODE="0664", GROUP="video"
+# DTV02A-4TS-P
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0254", MODE="0664", GROUP="video"
+# DTV02-5T-P
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="024d", MODE="0664", GROUP="video"
+# UNKNOWN
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="048d", ATTRS{idProduct}=="9306", MODE="0664", GROUP="video"
