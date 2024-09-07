@@ -40,7 +40,7 @@ class MainFrame ( wx.Frame ):
 		bSizerBackupTuner = wx.BoxSizer( wx.HORIZONTAL )
 
 		m_choiceBackupTunerChoices = []
-		self.m_choiceBackupTuner = wx.Choice( self.m_panelBackup, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_choiceBackupTunerChoices, 0 )
+		self.m_choiceBackupTuner = wx.Choice( self.m_panelBackup, wx.ID_ANY, wx.DefaultPosition, wx.Size( 150,-1 ), m_choiceBackupTunerChoices, 0 )
 		self.m_choiceBackupTuner.SetSelection( 0 )
 		bSizerBackupTuner.Add( self.m_choiceBackupTuner, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 
