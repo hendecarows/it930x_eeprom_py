@@ -52,9 +52,10 @@ class Tuner:
         'PX-M1UR': (0x0511, 0x0854),
         'PX-S1UR': (0x0511, 0x0855),
         'DTV02-1T1S-U': (0x0511, 0x004b),
-        'DTV02A-1T1S-U_2309': (0x0511, 0x084b),
+        'DTV02A-1T1S-U 2309': (0x0511, 0x084b),
         'DTV02A-4TS-P': (0x0511, 0x0254),
         'DTV02-5T-P': (0x0511, 0x024d),
+        'DTV03A-1TU 202111': (0x0511, 0x0052),
         'UNKNOWN': (0x048d, 0x9306),
     }
 
@@ -438,8 +439,8 @@ class MyApp(wx.App):
         self.spinCtrlBackupPid.SetBase(16)
         self.spinCtrlRestorePid.SetBase(16)
         self.spinCtrlRestoreVid.SetBase(16)
-        self.spinCtrlRestoreVid.SetValue(0x048d)
-        self.spinCtrlRestorePid.SetValue(0x9306)
+        self.spinCtrlRestorePid.SetValue(0x048d)
+        self.spinCtrlRestoreVid.SetValue(0x9306)
 
         self.textCtrlRestoreDeviceEeprom.SetFont(self.text_font)
         self.textCtrlRestoreFileEeprom.SetFont(self.text_font)
