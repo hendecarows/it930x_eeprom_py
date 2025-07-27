@@ -615,6 +615,13 @@ class MyApp(wx.App):
                 self.textCtrlRestoreLog.AppendText('VID デバイス={:#06x} ファイル={:#06x}\n'.format(device_vid, file_vid))
                 self.textCtrlRestoreLog.AppendText('PID デバイス={:#06x} ファイル={:#06x}\n'.format(device_pid, file_pid))
 
+                # EEPROM内容の先頭2バイトは、3バイト目から最終バイトまでを合計したチェックサム
+                header_2bytes = int.from_bytes(self.restore_file_eeprom[0:2], 'big')
+                checksum = 0
+                for i in range(2, len(self.restore_file_eeprom)):
+                    checksum += self.restore_file_eeprom[i]
+                self.textCtrlRestoreLog.AppendText('ファイル 先頭2バイト={:#04x} チェックサム={:#04x}\n'.format(header_2bytes, checksum))
+
                 self.eeprom_differences = []
                 for address, vd in enumerate(self.restore_device_eeprom):
                     vf = self.restore_file_eeprom[address]
@@ -630,6 +637,13 @@ class MyApp(wx.App):
                     wx.MessageBox(msg, caption='情報')
                 elif device_vid != file_vid or device_pid != file_pid:
                     msg = 'VID:PIDがデバイス({:#06x}:{:#06x})とファイル({:#06x}:{:#06x})で一致していません。'.format(device_vid, device_pid, file_vid, file_pid)
+                    self.textCtrlRestoreLog.AppendText(msg + '\n')
+                    msg += '書き込みボタンを有効にしますか？'
+                    ret = wx.MessageBox(msg, caption='警告', style=wx.YES_NO | wx.NO_DEFAULT | wx.ICON_WARNING)
+                    if ret == wx.YES:
+                        self.buttonRestoreWrite.Enable()
+                elif checksum != header_2bytes:
+                    msg = 'ファイルの先頭2バイト{:#04x}がチェックサム{:#04x}と一致していません。'.format(header_2bytes, checksum)
                     self.textCtrlRestoreLog.AppendText(msg + '\n')
                     msg += '書き込みボタンを有効にしますか？'
                     ret = wx.MessageBox(msg, caption='警告', style=wx.YES_NO | wx.NO_DEFAULT | wx.ICON_WARNING)
