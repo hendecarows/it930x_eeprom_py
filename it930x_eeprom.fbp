@@ -50,7 +50,7 @@
       <property name="minimum_size"></property>
       <property name="name">MainFrame</property>
       <property name="pos"></property>
-      <property name="size">620,550</property>
+      <property name="size">630,550</property>
       <property name="style">wxCAPTION|wxCLOSE_BOX</property>
       <property name="subclass">; ; forward_declare</property>
       <property name="title">it930x_eeprom</property>
@@ -440,7 +440,7 @@
                               <property name="min">0</property>
                               <property name="min_size"></property>
                               <property name="minimize_button">0</property>
-                              <property name="minimum_size">100,-1</property>
+                              <property name="minimum_size">110,-1</property>
                               <property name="moveable">1</property>
                               <property name="name">m_spinCtrlBackupVid</property>
                               <property name="pane_border">1</property>
@@ -503,7 +503,7 @@
                               <property name="min">0</property>
                               <property name="min_size"></property>
                               <property name="minimize_button">0</property>
-                              <property name="minimum_size">100,-1</property>
+                              <property name="minimum_size">110,-1</property>
                               <property name="moveable">1</property>
                               <property name="name">m_spinCtrlBackupPid</property>
                               <property name="pane_border">1</property>
@@ -1263,7 +1263,7 @@
                               <property name="min">0</property>
                               <property name="min_size"></property>
                               <property name="minimize_button">0</property>
-                              <property name="minimum_size">100,-1</property>
+                              <property name="minimum_size">110,-1</property>
                               <property name="moveable">1</property>
                               <property name="name">m_spinCtrlRestoreVid</property>
                               <property name="pane_border">1</property>
@@ -1326,7 +1326,7 @@
                               <property name="min">0</property>
                               <property name="min_size"></property>
                               <property name="minimize_button">0</property>
-                              <property name="minimum_size">100,-1</property>
+                              <property name="minimum_size">110,-1</property>
                               <property name="moveable">1</property>
                               <property name="name">m_spinCtrlRestorePid</property>
                               <property name="pane_border">1</property>
