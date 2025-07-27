@@ -17,7 +17,7 @@ import wx.xrc
 class MainFrame ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"it930x_eeprom", pos = wx.DefaultPosition, size = wx.Size( 620,550 ), style = wx.CAPTION|wx.CLOSE_BOX|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"it930x_eeprom", pos = wx.DefaultPosition, size = wx.Size( 630,550 ), style = wx.CAPTION|wx.CLOSE_BOX|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 
@@ -50,12 +50,12 @@ class MainFrame ( wx.Frame ):
 		bSizerBackupTuner.Add( self.m_staticTextBackup3, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
 
 		self.m_spinCtrlBackupVid = wx.SpinCtrl( self.m_panelBackup, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.SP_ARROW_KEYS, 0, 65535, 0 )
-		self.m_spinCtrlBackupVid.SetMinSize( wx.Size( 100,-1 ) )
+		self.m_spinCtrlBackupVid.SetMinSize( wx.Size( 110,-1 ) )
 
 		bSizerBackupTuner.Add( self.m_spinCtrlBackupVid, 1, wx.ALL, 5 )
 
 		self.m_spinCtrlBackupPid = wx.SpinCtrl( self.m_panelBackup, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.SP_ARROW_KEYS, 0, 65535, 0 )
-		self.m_spinCtrlBackupPid.SetMinSize( wx.Size( 100,-1 ) )
+		self.m_spinCtrlBackupPid.SetMinSize( wx.Size( 110,-1 ) )
 
 		bSizerBackupTuner.Add( self.m_spinCtrlBackupPid, 1, wx.ALL, 5 )
 
@@ -128,12 +128,12 @@ class MainFrame ( wx.Frame ):
 		bSizerRestoreVidPid = wx.BoxSizer( wx.HORIZONTAL )
 
 		self.m_spinCtrlRestoreVid = wx.SpinCtrl( self.m_panelRestore, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.SP_ARROW_KEYS, 0, 65535, 1165 )
-		self.m_spinCtrlRestoreVid.SetMinSize( wx.Size( 100,-1 ) )
+		self.m_spinCtrlRestoreVid.SetMinSize( wx.Size( 110,-1 ) )
 
 		bSizerRestoreVidPid.Add( self.m_spinCtrlRestoreVid, 1, wx.ALL|wx.EXPAND, 5 )
 
 		self.m_spinCtrlRestorePid = wx.SpinCtrl( self.m_panelRestore, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.SP_ARROW_KEYS, 0, 65535, 37638 )
-		self.m_spinCtrlRestorePid.SetMinSize( wx.Size( 100,-1 ) )
+		self.m_spinCtrlRestorePid.SetMinSize( wx.Size( 110,-1 ) )
 
 		bSizerRestoreVidPid.Add( self.m_spinCtrlRestorePid, 1, wx.ALL|wx.EXPAND, 5 )
 
