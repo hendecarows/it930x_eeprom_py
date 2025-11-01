@@ -56,6 +56,10 @@ class Tuner:
         'DTV02A-4TS-P': (0x0511, 0x0254),
         'DTV02-5T-P': (0x0511, 0x024d),
         'DTV03A-1TU 202111': (0x0511, 0x0052),
+        'KTV-FSUSB2/V3': (0x0511, 0x0046),
+        'KTV-FSMINI': (0x0511, 0x0046),
+        'PT275': (0x048d, 0x9175),
+        'PT275C': (0x048d, 0xe275),
         'UNKNOWN': (0x048d, 0x9306),
     }
 
