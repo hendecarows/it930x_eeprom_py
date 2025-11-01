@@ -43,6 +43,15 @@ ATTRS{idVendor}=="0511", ATTRS{idProduct}=="024d", MODE="0664", GROUP="video"
 # DTV03A-1T-U 202111
 ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
 ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0052", MODE="0664", GROUP="video"
+# KTV-FSUSB2/V3 KTV-FSMINI
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0046", MODE="0664", GROUP="video"
+# PT275
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="048d", ATTRS{idProduct}=="9175", MODE="0664", GROUP="video"
+# PT275C
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="048d", ATTRS{idProduct}=="e275", MODE="0664", GROUP="video"
 # UNKNOWN
 ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
 ATTRS{idVendor}=="048d", ATTRS{idProduct}=="9306", MODE="0664", GROUP="video"
