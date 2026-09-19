@@ -37,6 +37,9 @@ ATTRS{idVendor}=="0511", ATTRS{idProduct}=="084b", MODE="0664", GROUP="video"
 # DTV02A-4TS-P
 ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
 ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0254", MODE="0664", GROUP="video"
+# DTV02A-5TS-P
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
+ATTRS{idVendor}=="0511", ATTRS{idProduct}=="924e", MODE="0664", GROUP="video"
 # DTV02-5T-P
 ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
 ATTRS{idVendor}=="0511", ATTRS{idProduct}=="024d", MODE="0664", GROUP="video"
